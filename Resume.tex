@@ -1,0 +1,165 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}{: #2 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------- CV STARTS HERE -------------
+\begin{document}
+
+%---------- Heading ----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Santhoshi Boyina}} & Email: \href{mailto:boyinasanthoshi12@gmail.com}{boyinasanthoshi12@gmail.com} \\
+  \href{https://www.linkedin.com/in/santhoshi-boyina/}{Portfolio: linkedin.com/in/santhoshi-boyina} & \href{https://github.com/SanthoshiBoyina}{GitHub: github.com/SanthoshiBoyina} \\
+\end{tabular*}
+
+%---------- Profile ----------
+\vspace{+5pt}
+\section{Profile}
+I am a Passionate and Results-driven developer with a strong background in TypeScript, React.js, and Python. I thrive in collaborative environments, constantly learning and adapting to new technologies to deliver high-quality software solutions.
+
+%---------- Experience ----------
+\vspace{+5pt}
+\section{Experience}
+    \resumeSubHeadingListStart
+	\resumeSubheading
+		{IBM}{Hybrid}
+		{Software Developer (Full Time)}{July 2023 - Present}
+		\resumeItemListStart
+			\resumeItem
+					{Zowe Explorer (for VS Code) Project}
+					{\linebreak - Delivered multiple enhancements and resolved key bugs to improve overall stability and user experience. \linebreak - Added functionality to seamlessly switch between basic and token-based authentication methods. \linebreak - Developed rich hover tooltips for Zowe Explorer profiles, providing detailed connection information at a glance. \linebreak - Integrated client-side certificate authentication support for z/OSMF, enhancing security and flexibility. \linebreak - Implemented sorting of Partitioned Data Set (PDS) members by creation date for better usability. \linebreak - Introduced the “Filter Jobs” feature in the Jobs tree view of Zowe Explorer, enabling efficient job management.}
+			\resumeItem
+					{RSE API Plug-in for Zowe CLI Project}
+					{\linebreak - Introduced a new unix-cross-lpar command to the RSE Copy command group, enabling users to copy UNIX files across different LPARs. \linebreak - Added a uss-directory command to the RSE Download command group, allowing users to download entire UNIX directories to their local workspace. \linebreak - Developed scripts to automate manual release tasks to reducing manual effort. \linebreak - Implemented a new command in the RSE Submit group that allows submission of jobs (JCL) directly from USS files.}
+		\resumeItemListEnd
+
+	\vspace{+5pt}
+	\resumeSubheading
+		{IBM}{On Site}
+		{Intern Software Developer}{January 2023 - July 2023}
+		\resumeItemListStart
+			\resumeItem
+					{Z ChatOps Project}
+					{In this project, I was responsible to build a dynamic and responsive user interface that ensured a smooth and
+                    interactive user experience using Reactjs. \linebreak - React Hooks and state management techniques were leveraged to maintain the UI's responsiveness and modularity. \linebreak - CRUD operations were implemented using SQL to handle user data}
+		\resumeItemListEnd
+
+	\vspace{+5pt}
+	\resumeSubheading
+		{Smart Interviews}{On site}
+		{Student Mentor}{April 2022 - December 2022}
+		\resumeItemListStart
+			\resumeItem
+					{Mentor}
+					{\linebreak - I played a role in improving Student Problem-Solving, Debugging Skills and also help in breaking down
+                    complex problems into simpler ones. \linebreak - Responsible for Interacting, Debugging, and Clarifying Mentee Doubts.}
+	\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%---------- Education ----------
+\vspace{+5pt}
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Shri Vishnu Engineering College For Women}{Bhimavaram, India}
+            {Engineering: Bachelor of Technology - Computer Science and Engineering CGPA: 8.5}{2019 - 2023}
+        \resumeSubheading
+            {Star Junior College}{Machilipatnam, India}
+            {Intermediate: MPC - Mathematics, Physics and Chemistry CGPA: 10}{2017 - 2019}
+        \resumeSubheading
+            {A Little Flower The Leader (EM) High School}{Machilipatnam, India}
+            {SSC CGPA: 9.8}{2016 - 2017}
+    \resumeSubHeadingListEnd
+
+%---------- Skills Summary ----------
+\vspace{+5pt}
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Languages}{Python, C++, Java, C, Data Structures and Algorithms}
+        \resumeSubItem{Frontend Technologies}{ReactJs, Typescript, JavaScript, HTML, CSS}
+        \resumeSubItem{Backend Technologies}{NodeJs, ExpressJs, RESTful APIs}
+        \resumeSubItem{Database Technologies}{MongoDB, PostgreSQL}
+    \resumeSubHeadingListEnd
+
+%---------- Projects ----------
+\vspace{+5pt}
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Blog Application using MERN Stack}
+            {Developed a Blog Application using the MERN stack (MongoDB, Express.js, React.js, and Node.js) that allows users to securely log in to their accounts and manage their personal blogs. Where users can view, create, edit, and delete their blog posts. Available at \href{https://github.com/SanthoshiBoyina/BlogApplication}{GitHub}.}
+        \resumeSubItem
+            {Scrabble Crossword Game using Python}
+            {The Game is developed using \textbf{Python} which supports 2 to 4 players, allowing them to compete by placing letter tiles on a 15x15 grid-based board to form valid words and score points. The application handles turn-based gameplay, word validation, and score calculation. The back-end \textbf{MySQL database} records each player's scores. Available at \href{https://github.com/SanthoshiBoyina/Scrabble}{GitHub}.}
+    \resumeSubHeadingListEnd
+
+%---------- Awards ----------
+\vspace{+5pt}
+\section{Honors and Awards}
+    \begin{itemize}
+        \item Star of the Month Award July 2024 (IBM) - For implementing authentication switching in the Zowe Explorer VS Code.Extension.
+        \item First Prize, \textbf{National Science Day Quiz 2020} (ISTE, SVECW)
+    \end{itemize}
+
+%---------- Volunteer Experience ----------
+\vspace{+5pt}
+\section{Volunteer Experience}
+\begin{itemize}
+    \item {Member of \textbf{Women in Software Engineering (WISE)} program of \textbf{Talent Sprint} mentored by \href{https://www.linkedin.com/in/pasokan/}{\underline{\textit{Asokan Pichai}}}, to enlighten women on various \textbf{Trending Technologies} such as Python, Machine Learning.}
+    \item {Represented and coordinated academic activities for a cohort of \textbf{60+} students as Class Representative in the first year of Engineering.}
+    \item {Coordinated Student activities and Initiatives as a member of the \textbf{Eco-Friendly Association} and \textbf{MECOW Club}.}
+    \end{itemize}
+
+\end{document}
